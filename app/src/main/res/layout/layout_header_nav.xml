@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="bottom"
+    android:id="@+id/linearLayout_header"
+    android:background="@drawable/cus_color_header_nav">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/bsl_shop"/>
+    <TextView
+        android:id="@+id/nav_name_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+       android:layout_marginVertical="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/nav_phone_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0384657154"
+        android:textSize="14sp"
+        android:textColor="#73706B" />
+    <TextView
+        android:id="@+id/nav_address_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BSL Shop, 13 Hoàn Hoa Thám Quận 1"
+        android:textSize="14sp"
+        android:textColor="#292C30" />
+
+</LinearLayout>

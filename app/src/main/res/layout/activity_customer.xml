@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CustomerActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bsl_shop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:background="@color/primary_1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_infor_order_customer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_shopping_cart"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:gravity="center"
+            android:text="Thông tin đơn hàng "
+            android:textColor="@color/purple_200"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_total_price_customer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="360,000 Đ"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <EditText
+            android:id="@+id/edt_voucher_customer"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cus_corner_radius"
+            android:drawableLeft="@drawable/ic_voucher"
+            android:drawablePadding="10dp"
+            android:hint="@string/kh_voucher"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_voucher_customer"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:maxWidth="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cus_btv_corner_radius"
+            android:textColor="@color/white"
+            android:text="@string/btn_use"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_voucher_result_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="12sp"
+        android:textColor="#EA971E"
+        android:text="@string/nav_cart"/>
+    <FrameLayout
+        android:id="@+id/content_frame_customer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BSL Shop</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_about">Giới thiệu</string>
+    <string name="nav_cart">Giỏ hàng</string>
+    <string name="nav_account">Tài khoản</string>
+    <string name="nav_loggin">Đăng nhập</string>
+    <string name="nav_mt_profile">Thông tin cá nhân</string>
+    <string name="nav_change_password">Đổi mật khẩu</string>
+    <string name="nav_phone">Số điện thoại</string>
+    <string name="edt_search">Tìm kiếm sản phẩm</string>
+    <string name="note">Ghi chú</string>
+    <string name="nav_cart_null">Chưa có sản phẩm nào</string>
+    <string name="kh_name">Họ và tên</string>
+    <string name="kh_sdt">Số điện thoại</string>
+    <string name="kh_diachi">Địa chỉ</string>
+    <string name="kh_pass">Mật khẩu</string>
+    <string name="btn_use">Sử dụng</string>
+    <string name="kh_voucher">Mã giảm giá</string>
+    <string name="kh_thongtin">Thông tin giao hàng</string>
+    <string name="kh_haveaccount">Vui lòng điền chính xác thông tin để thuận tiện cho việc giao hàng !</string>
+    <string name="btn_pay">Tiếp tục phương thức thanh toán</string>
+    <string name="kh_phuongthucvanchuyen">Phương thức vận chuyển</string>
+    <string name="kh_giaohangtannoi">GIAO HÀNG TẬN NƠI</string>
+    <string name="kh_phuongthucthanhtoan">Phương thức thanh toán</string>
+    <string name="kh_thanhtoankhinhan">Thanh toán khi nhận hàng (COD)</string>
+    <string name="btn_hoantat">Hoàn tất đơn hàng</string>
+    <string name="nav_quaylaithong">Quay lại thông tin giao hàng</string>
+    <string name="btn_loggin">Đăng nhập</string>
+    <string name="kh_register">Tạo tài khoản mới ?</string>
+    <string name="loggin_dangky">Đăng ký</string>
+    <string name="nav_Logout">Đăng xuất</string>
+    <string name="kh_about">BSL Shop hân hạnh được tận tâm phục vụ khách hàng !</string>
+
+</resources>

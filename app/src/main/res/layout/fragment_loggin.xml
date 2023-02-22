@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:background="@drawable/cus_corner_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:text="@string/btn_loggin" />
+
+        <EditText
+            android:id="@+id/txt_phone_loggin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/cus_corner_radius"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:hint="@string/kh_sdt"
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="@null"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txt_password_loggin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/cus_corner_radius"
+            android:drawableLeft="@drawable/ic_change_password"
+            android:drawablePadding="10dp"
+            android:hint="@string/kh_pass"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            android:text="@null"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="#C5C4C3"-->
+<!--                android:text="@string/kh_register" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/txt_register_loggin"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/purple_200"-->
+<!--                android:text="@string/loggin_dangky"-->
+<!--                android:padding="5dp"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+        <Button
+            android:id="@+id/btn_loggin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cus_btv_corner_radius"
+            android:padding="20dp"
+            android:text="@string/btn_loggin"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_chose_all_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_clear_cart"
+            android:background="@drawable/cus_btv_corner_radius"
+            android:padding="10dp"
+            android:text="Chọn tất cả"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_clear_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="Xóa"
+            android:textColor="@color/purple_500" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_marginTop="5dp"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/txt_null_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_cart_null"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@color/teal_700"/>
+       <ListView
+           android:id="@+id/lv_cart"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <EditText
+            android:id="@+id/txt_note_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lnLayout3"
+            android:layout_alignParentStart="true"
+            android:gravity="top|start"
+            android:hint="@string/note"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:paddingHorizontal="5dp"
+            android:scrollbars="vertical" />
+        <LinearLayout
+            android:id="@+id/lnLayout3"
+            android:layout_above="@+id/btn_continue_cart"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Tổng cộng : "
+                android:textColor="@color/purple_700"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txt_total_price_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="360,000 Đ"
+                android:minWidth="150dp"
+                android:textColor="#F44336"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_toLeftOf="@+id/btn_pay_cart"
+            android:background="@drawable/cus_btv_corner_radius"
+            android:drawableLeft="@drawable/ic_back_24px"
+            android:paddingHorizontal="10dp"
+            android:text="Tiếp tục mua hàng"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_pay_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/cus_btv_corner_radius"
+            android:paddingHorizontal="10dp"
+            android:text="Thanh toán"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

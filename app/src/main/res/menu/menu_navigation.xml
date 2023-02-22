@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/nav_cart"
+            android:title="@string/nav_cart"
+            android:icon="@drawable/ic_cart"/>
+        <item android:id="@+id/nav_about"
+            android:title="@string/nav_about"
+            android:icon="@drawable/ic_location"/>
+    </group>
+    <item android:title="@string/nav_account">
+        <menu>
+
+<!--            <item android:id="@+id/nav_my_profile"-->
+<!--                android:title="@string/nav_mt_profile"-->
+<!--                android:visible="false"-->
+<!--                android:icon="@drawable/ic_about"/>-->
+<!--            <item android:id="@+id/nav_change_password"-->
+<!--                android:title="@string/nav_change_password"-->
+<!--                android:visible="false"-->
+<!--                android:icon="@drawable/ic_change_password"/>-->
+            <item android:id="@+id/nav_my_loggin"
+                android:title="@string/nav_loggin"
+                android:visible="true"
+                android:icon="@drawable/ic_person"/>
+            <item android:id="@+id/nav_logout"
+                android:title="@string/nav_Logout"
+                android:visible="false"
+                android:icon="@drawable/ic_loggout"/>
+
+        </menu>
+    </item>
+</menu>

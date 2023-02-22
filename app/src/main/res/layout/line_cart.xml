@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_gravity="center_vertical"
+            android:id="@+id/cbk_line_choose_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/img_line_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_messenger" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/txt_line_name_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="Fragment_cart"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_line_price_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="360,000 Đ"
+            android:textColor="@color/purple_700"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_line_size_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textColor="#CF9F10"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_minus_line_cart"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@color/primary_1"
+                android:focusable="false"
+                android:text="-"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_value_line_cart"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:focusable="false"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_add_line_cart"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@color/primary_1"
+                android:focusable="false"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Thành tiền : "
+                android:textColor="@color/purple_700"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/txt_line_total_price_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="360,000 Đ"
+                android:textColor="#F44336"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

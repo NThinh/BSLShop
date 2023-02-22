@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/kh_phuongthucvanchuyen"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/cus_corner_radius"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/kh_giaohangtannoi"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="35,000 Đ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:gravity="center_vertical|end"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/kh_phuongthucthanhtoan"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/cus_corner_radius"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_pay"
+            android:textSize="16sp"
+            android:text="@string/kh_thanhtoankhinhan"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/cus_btn_corner_radius"
+        android:padding="20dp"
+        android:text="@string/btn_hoantat"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_customer_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_btn_corner_white"
+        android:padding="10dp"
+        android:text="@string/nav_quaylaithong"
+        android:textColor="@color/purple_200" />
+</LinearLayout>
