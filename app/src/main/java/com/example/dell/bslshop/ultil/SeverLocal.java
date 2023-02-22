@@ -2,7 +2,7 @@ package com.example.dell.bslshop.ultil;
 
 
 public class SeverLocal {
-    //ip mạng của máy tính kết nối với xampp
+    //ip mạng của máy tính kết nối với xampp.
     public static String localhost = "192.168.2.6:8080";
     public static String localhost1 = "172.20.10.8:8080";
     public static String localhost2 = "192.168.25.41:8080";
